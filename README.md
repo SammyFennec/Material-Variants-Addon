@@ -7,3 +7,15 @@ With this addon, you can create as much variant options as you want. Then, selec
 
 
 I think this will make your life a lil bit easier. I've made some of the code with Copilot, I didn't have neither the time or the instructions to make it myself, so it will likely have some bugs and performance issues. You can edit the code if you want, any help is welcomed ^^ 
+
+## How to use
+
+1. First you need to create the objects you're going to use
+2. Then you need to create the number of variants you want on the Material Variants side panel
+
+![ezgif-5-f97d0bf95a](https://github.com/user-attachments/assets/1fe1d5e8-e571-4601-a232-86bbd727b18e)
+
+3. Then, assign to each variant the material each object will use
+
+
+
