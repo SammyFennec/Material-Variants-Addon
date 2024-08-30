@@ -41,7 +41,7 @@ class OBJECT_PT_CustomPanel(bpy.types.Panel):
             layout.prop(obj.material_options[scene.material_options_index], "material", text="Material")
 
         layout.separator()
-        layout.label(text="Select Option:")
+        layout.label(text="Select Variant")
         row = layout.row(align=True)
         row.prop(scene, "selected_option", text="")
         row.operator("material_list.reload_dropdown", icon='FILE_REFRESH', text="")
@@ -53,7 +53,7 @@ class MATERIAL_OT_NewItem(bpy.types.Operator):
     def execute(self, context):
         scene = context.scene
         new_item = scene.material_options.add()
-        new_item.name = "Option " + str(len(scene.material_options))
+        new_item.name = "Variant " + str(len(scene.material_options))
 
         for obj in bpy.data.objects:
             if obj.type == 'MESH':
